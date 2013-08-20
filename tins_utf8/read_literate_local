@@ -1,0 +1,6 @@
+#class read_literate open
+#alias {nojing} {#unaction {你减缓真气运行，让自身恢复正常。}}
+#alias {autojing} {#action {你减缓真气运行，让自身恢复正常。} { yun jing;}}
+#action {你减缓真气运行，让自身恢复正常。} { yun regenerate; yun jing;}
+#action {望终南(twksos)告诉你：干活} { do 10 du shu for 1; #delay {5} {tell twksos 干活;} }
+#class read_literate close
