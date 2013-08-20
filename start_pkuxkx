@@ -1,0 +1,4 @@
+#!/bin/bash
+python utf82gbk.py
+tt++ xkx.tin
+
