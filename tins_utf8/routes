@@ -1,0 +1,27 @@
+do 2 sd;out;do 9 w;s;e;s;nw;sw;
+se;do 6 e;ne;do 5 n;nw;n;
+do 4 nw;wu;w;
+do 2 s;do 6 w;do 2 s;do 4 w;nw;
+do 3 n;do 4 nw;do 2 wu;wd;sw;do 2 w;
+do 3 sw;
+#nop 江州中央广场
+do 5 s;su;se;do 3 s;
+#nop 南昌城中心
+do 3 w;do 2 wu;nu;enter;
+
+
+out;sd;do 2 ed;do 3 e;
+#nop 南昌城中心
+do 3 n;nw;nd;do 5 n;
+#nop 江州中央广场
+do 3 ne;do 2 e;
+ne;eu;do 2 ed;
+do 4 se;do 3 s;
+se;do 4 e;
+do 2 n;do 6 e;
+do 2 n;e;ed;do 4 se;
+s;se;
+#nop 苏州北
+do 5 s;sw;do 6 w;
+nw;ne;se;n;w;n;do 9 e;
+enter;do 2 nu;
