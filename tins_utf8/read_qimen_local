@@ -12,6 +12,7 @@
 		#else { zhao; }
 	}
 }
+#ticker {read_qimen} {do 4 n;eat doufu;eat dianxin;eat baicai;drink hulu;do 4 s} {30}
 #action {请用 id 指令看看物品 id 。} {#var {qimen_book} {""}}
 #action {你在这里找了半天，却什么都没有找到。} { zhao }
 #action {你找到了一本易经，欣喜若狂。} {#var {qimen_book} {yi jing}; tell twksos 读书}
