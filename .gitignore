@@ -1,2 +1,3 @@
 .DS_Store
-*.tin
+bin
+tins_utf8/session

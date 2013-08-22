@@ -1,0 +1,27 @@
+#class bagua open
+#list {乾天} {create} {e;ne;w;s};
+#list {兑泽} {create} {n;sw;nw;s};
+#list {离火} {create} {s;n;se;nw};
+#list {震雷} {create} {w;se;n;n};
+#list {巽风} {create} {se;e;s;sw};
+#list {坎水} {create} {ne;n;sw;nw};
+#list {艮山} {create} {sw;w;w;s};
+#list {坤地} {create} {nw;nw;s;e};
+
+#act {天色大变，陆乘风给你算的卦也不那么准了。} {leave;do 3 w;ask lu about job;}
+#nop 陆乘风说道：「望终南，我为你占得一卦：离火。」
+#act {陆乘风说道：「望终南，我为你占得一卦：%1。」}{
+	#var {gua} {%1}; #echo $gua;
+	#var {step_index}{1};
+	do 4 e;
+}
+#alias {gua %1} {
+	#var {gua} {%1}; #echo $gua;
+	#var {step_index}{1};
+	do 4 e;
+}
+#act {你顺利地回到了起点。} {#var {step_index}{1};}
+#act {这里是一大片的桃花阵，隐含八卦九宫位置。} {checkbusy }
+#action {你正忙} {#delay {1} {checkbusy}}
+#action {你不忙} {#echo $gua; #list $gua get $step_index next_step; #echo 下一步$next_step; $next_step; #math {step_index} {($step_index)%4+1} }
+#class bagua close

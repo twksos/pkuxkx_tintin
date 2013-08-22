@@ -4,7 +4,7 @@ import sys
 import os
 full_dir = os.path.dirname(os.path.realpath(__file__))
 ifile_dir = os.path.join(full_dir,'tins_utf8')
-ofile_dir = full_dir
+ofile_dir = os.path.join(full_dir,'bin')
 
 def utf8_to_gbk(file_name):
 	ifile_path = os.path.join(ifile_dir,file_name)
@@ -14,7 +14,7 @@ def utf8_to_gbk(file_name):
 
 	gbk_str = utf8_str.decode('UTF-8').encode('GBK')
 
-	ofile_path = os.path.join(ofile_dir,file_name+'.tin')
+	ofile_path = os.path.join(ofile_dir,file_name)
 	fo = open(ofile_path, "w")
 	fo.write(gbk_str);
 	fo.close()

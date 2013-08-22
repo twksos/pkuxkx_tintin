@@ -1,5 +1,6 @@
 #!/usr/local/bin/tt++
-#session xkx pkuxkx.net 5555;
+#split
+#read session
 
 #nop 机器人判定
 #action {http://pkuxkx.net/antirobot/robot.php?filename=%1} { #system open http://pkuxkx.net/antirobot/robot.php?filename=%1 }
@@ -8,4 +9,4 @@
 #action {你将散入经脉的真气收回丹田，深深吸了口气，站了起来。} { dz 50; }
 #action {白银(Silver)} {get silver}
 
-#action {#(%1)),38473,230,277,384,384\n#217,217,217,225,225,225 } {}
+#action {#(%1),(%2),(%3),(%4),(%5),(%6)%s#(%7),(%8),(%1),(%1),(%1),(%1)} {#echo %1}
